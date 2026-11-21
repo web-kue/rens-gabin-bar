@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ================= SECURITY HEADERS (META CSP) ================= -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; media-src 'self'; frame-src https://www.google.com; connect-src 'self';">
+
+    <!-- ================= SEO & META TAGS ================= -->
+    <title>Ren's Gabin Bar — Dessert Gabin Lumer & Renyah di Ciputat Timur, Tangsel</title>
+    <meta name="description" content="Pesan Ren's Gabin Bar, kue gabin isi cream tebal dingin & lumer di Ciputat Timur, Tangerang Selatan. Tersedia rasa Rich Chocolate, Cheese Regal, Matcha, Vanilla Strawberry, Taro, Cookies & Cream, Duren, dan Vanilla Mango mulai Rp 11.000.">
+    <meta name="keywords" content="Ren's Gabin Bar, gabin bar tangsel, kue gabin ciputat timur, dessert box tangerang selatan, gabin cheese regal, jajanan kekinian rengas ciputat">
+    <meta name="author" content="Ren's Gabin Bar">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rensgabinbar.com/">
+
+    <!-- ================= OPEN GRAPH (WHATSAPP / FB / IG) ================= -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rensgabinbar.com/">
+    <meta property="og:title" content="Ren's Gabin Bar | Gabin Cream Tebal & Lumer Mulai 11K ✨">
+    <meta property="og:description" content="Yakin nggak mau? Gabin renyah berpadu cream lembut dingin dalam kemasan foil higienis. Pengiriman dari Ciputat Timur, Tangerang Selatan. Pesan via WhatsApp sekarang!">
+    <meta property="og:image" content="assets/price-list.jpg">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="Ren's Gabin Bar">
+
+    <!-- ================= TWITTER / X CARD ================= -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ren's Gabin Bar — Gabin Cream Lumer Tangsel">
+    <meta name="twitter:description" content="8 varian rasa premium: Rich Chocolate, Cheese Regal, Vanilla Strawberry, Matcha, Taro, Cookies & Cream, Duren, & Vanilla Mango.">
+    <meta name="twitter:image" content="assets/price-list.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- ================= STRUCTURED DATA (JSON-LD SEO LOKAL) ================= -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "name": "Ren's Gabin Bar",
+      "image": "assets/logo.png",
+      "description": "Toko dessert personal penyedia Gabin Bar dingin dengan isian cream tebal aneka rasa di Ciputat Timur, Tangerang Selatan.",
+      "telephone": "+6285772389971",
+      "priceRange": "Rp 11.000 - Rp 13.000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. W R Supratman, Rengas",
+        "addressLocality": "Ciputat Timur",
+        "addressRegion": "Kota Tangerang Selatan, Banten",
+        "postalCode": "15412",
+        "addressCountry": "ID"
+      },
+      "sameAs": [
+        "https://www.instagram.com/lina_renna",
+        "https://www.tiktok.com/@rens.gabin.bar",
+        "https://www.threads.com/@lina_renna"
+      ]
+    }
+    </script>
+
+    <!-- ================= FONTS & ICONS ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ================= TAILWIND CSS CONFIG ================= -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Fredoka', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#FFF1F5',
+                            100: '#FFE4EC',
+                            200: '#FECDD9',
+                            400: '#FB719A',
+                            500: '#F43F7A',
+                            600: '#DB2763',
+                            800: '#9D174D',
+                            900: '#831843',
+                        },
+                        biscuit: {
+                            100: '#FEF3C7',
+                            500: '#D97706',
+                            700: '#B45309',
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 30px -5px rgba(244, 63, 122, 0.15)',
+                        'card': '0 4px 20px -2px rgba(157, 23, 77, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar & micro-interactions */
+        body {
+            background-color: #FFF9FB;
+            color: #3F1D2B;
+        }
+        .bg-pattern {
+            background-image: radial-gradient(#FECDD9 1.2px, transparent 1.2px);
+            background-size: 24px 24px;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-brand-200 selection:text-brand-900">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="fixed top-0 inset-x-0 z-40 glass-nav border-b border-brand-100 transition-all">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#beranda" class="flex items-center gap-3 group focus:outline-none">
+                <img src="assets/logo.png" alt="Logo Ren's Gabin Bar" 
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                     class="w-11 h-11 sm:w-12 sm:h-12 object-contain group-hover:scale-105 transition-transform">
+                <div class="hidden w-11 h-11 rounded-full bg-brand-500 text-white items-center justify-center font-display font-bold text-lg shadow-soft">R</div>
+                <div>
+                    <span class="font-display font-bold text-xl sm:text-2xl text-brand-600 tracking-tight block leading-none">Ren's</span>
+                    <span class="font-display font-medium text-xs sm:text-sm text-brand-800 tracking-wide">Gabin Bar</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav aria-label="Navigasi Utama" class="hidden md:flex items-center gap-7 font-medium text-sm text-brand-900/80">
+                <a href="#beranda" class="hover:text-brand-600 transition-colors">Beranda</a>
+                <a href="#menu" class="hover:text-brand-600 transition-colors">Menu Varian</a>
+                <a href="#keunggulan" class="hover:text-brand-600 transition-colors">Kenapa Kami</a>
+                <a href="#lokasi" class="hover:text-brand-600 transition-colors">Lokasi & Kontak</a>
+            </nav>
+
+            <!-- Cart & Mobile Menu Trigger Buttons -->
+            <div class="flex items-center gap-2 sm:gap-3">
+                <button onclick="toggleCart(true)" aria-label="Buka Keranjang Belanja"
+                        class="relative inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white px-4 py-2.5 rounded-full font-semibold text-sm shadow-soft transition-all active:scale-95">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span class="hidden sm:inline">Keranjang</span>
+                    <span id="nav-cart-count" class="bg-white text-brand-600 font-bold text-xs min-w-[22px] h-[22px] px-1.5 rounded-full flex items-center justify-center">0</span>
+                </button>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Buka Menu Navigasi" aria-expanded="false" aria-controls="mobile-nav"
+                        class="md:hidden w-10 h-10 rounded-full bg-brand-50 hover:bg-brand-100 text-brand-800 border border-brand-200 flex items-center justify-center transition-colors active:scale-95">
+                    <i id="mobile-menu-icon" class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <nav id="mobile-nav" aria-label="Navigasi Mobile" class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-brand-100 px-4 py-3 shadow-lg">
+            <div class="flex flex-col space-y-1 font-medium text-sm text-brand-900/80">
+                <a href="#beranda" onclick="toggleMobileMenu(false)" class="px-3 py-2.5 rounded-xl hover:bg-brand-50 hover:text-brand-600 transition-colors">Beranda</a>
+                <a href="#menu" onclick="toggleMobileMenu(false)" class="px-3 py-2.5 rounded-xl hover:bg-brand-50 hover:text-brand-600 transition-colors">Menu Varian</a>
+                <a href="#keunggulan" onclick="toggleMobileMenu(false)" class="px-3 py-2.5 rounded-xl hover:bg-brand-50 hover:text-brand-600 transition-colors">Kenapa Kami</a>
+                <a href="#lokasi" onclick="toggleMobileMenu(false)" class="px-3 py-2.5 rounded-xl hover:bg-brand-50 hover:text-brand-600 transition-colors">Lokasi & Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ================= HERO SECTION ================= -->
+        <section id="beranda" class="relative pt-28 pb-16 sm:pt-36 sm:pb-24 overflow-hidden bg-gradient-to-b from-brand-50 via-white to-[#FFF9FB] bg-pattern">
+            <!-- Decorative Blobs -->
+            <div class="absolute top-20 -left-20 w-72 h-72 bg-brand-200/40 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute bottom-10 -right-20 w-80 h-80 bg-biscuit-100/70 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+                <div class="grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+                    <!-- Text Content -->
+                    <div class="lg:col-span-7 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 bg-white border border-brand-200 text-brand-600 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-sm mb-5">
+                            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                            Open Order • Ciputat Timur, Tangerang Selatan
+                        </div>
+                        <h1 class="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-brand-900 leading-[1.15] mb-5">
+                            Gabin Renyah, Cream <span class="text-brand-500">Tebal & Lumer</span> di Setiap Gigitan!
+                        </h1>
+                        <p class="text-base sm:text-lg text-brand-900/75 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+                            Nikmati sensasi dingin & lembut <strong>Ren's Gabin Bar</strong> dengan 8 pilihan rasa favorit. Dibuat higienis, dibungkus aluminium foil rapat, cocok untuk teman santai atau hantaran manis.
+                        </p>
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5">
+                            <a href="#menu" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-bold px-7 py-3.5 rounded-full shadow-soft transition-all hover:-translate-y-0.5">
+                                <i class="fa-solid fa-cookie-bite"></i>
+                                Pilih Rasa Sekarang
+                            </a>
+                            <a href="#video-stok" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-brand-50 text-brand-800 border border-brand-200 font-semibold px-7 py-3.5 rounded-full transition-all">
+                                <i class="fa-solid fa-play text-brand-500"></i>
+                                Intip Stok Freezer
+                            </a>
+                        </div>
+
+                        <!-- Trust Indicators -->
+                        <div class="mt-9 pt-6 border-t border-brand-100 flex flex-wrap justify-center lg:justify-start gap-6 text-sm text-brand-900/70 font-medium">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-tag text-brand-500"></i> Mulai Rp 11.000</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-snowflake text-brand-500"></i> Disajikan Dingin</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-shield-heart text-brand-500"></i> 100% Homemade & Higienis</div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Collage -->
+                    <div class="lg:col-span-5 relative flex justify-center">
+                        <div class="relative w-full max-w-sm">
+                            <div class="bg-white p-3 rounded-3xl shadow-soft border-2 border-brand-100 rotate-2 hover:rotate-0 transition-transform duration-500">
+                                <img src="assets/cheese-regal.jpg" alt="Ren's Gabin Bar Varian Cheese Regal"
+                                     onerror="this.src='https://placehold.co/600x600/FFE4EC/9D174D?text=Ren%27s+Gabin+Bar'"
+                                     class="w-full aspect-square object-cover rounded-2xl">
+                            </div>
+                            <!-- Floating Badge 1 -->
+                            <div class="animate-float absolute -bottom-4 -left-4 bg-white px-4 py-3 rounded-2xl shadow-lg border border-brand-100 flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div>
+                                    <p class="font-display font-bold text-sm text-brand-900">8 Varian Rasa</p>
+                                    <p class="text-xs text-brand-900/60">Cream melimpah!</p>
+                                </div>
+                            </div>
+                            <!-- Floating Badge 2 -->
+                            <div class="absolute -top-4 -right-3 bg-brand-500 text-white px-4 py-2 rounded-2xl shadow-lg font-display font-bold text-sm -rotate-6">
+                                Best Seller! ⭐
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= MENU CATALOG SECTION ================= -->
+        <section id="menu" class="py-16 sm:py-24 max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-brand-500 font-bold text-xs uppercase tracking-widest">Menu Ren's Gabin Bar</span>
+                <h2 class="font-display font-bold text-3xl sm:text-4xl text-brand-900 mt-1 mb-3">Pilih Varian Favoritmu</h2>
+                <p class="text-brand-900/70 text-sm sm:text-base">Klik tombol tambah pada varian yang kamu suka, lalu langsung kirim pesanan via WhatsApp.</p>
+            </div>
+
+            <!-- Filter & Search Controls -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-10">
+                <!-- Category Pills -->
+                <div id="category-filters" class="flex items-center gap-2 overflow-x-auto no-scrollbar w-full md:w-auto pb-1 justify-start md:justify-center">
+                    <button data-category="all" class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap transition-all bg-brand-500 text-white shadow-sm">Semua Rasa (8)</button>
+                    <button data-category="bestseller" class="filter-btn px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap transition-all bg-white text-brand-800 border border-brand-200 hover:bg-brand-50">⭐ Best Seller</button>
+                    <button data-category="creamy" class="filter-btn px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap transition-all bg-white text-brand-800 border border-brand-200 hover:bg-brand-50">🍫 Creamy & Klasik</button>
+                    <button data-category="fruity" class="filter-btn px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap transition-all bg-white text-brand-800 border border-brand-200 hover:bg-brand-50">🍓 Fruity & Segar</button>
+                </div>
+
+                <!-- Search Input -->
+                <div class="relative w-full md:w-64">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-brand-400 text-sm"></i>
+                    <input type="text" id="search-input" maxlength="40" placeholder="Cari rasa (misal: matcha)..."
+                           aria-label="Cari varian rasa gabin"
+                           class="w-full pl-10 pr-4 py-2.5 bg-white border border-brand-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent">
+                </div>
+            </div>
+
+            <!-- Product Grid (Rendered by JS) -->
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Cards injected via JS -->
+            </div>
+
+            <!-- Empty Search State -->
+            <div id="empty-state" class="hidden text-center py-12">
+                <i class="fa-regular fa-face-sad-tear text-4xl text-brand-300 mb-3"></i>
+                <p class="font-display font-semibold text-lg text-brand-800">Varian tidak ditemukan</p>
+                <p class="text-sm text-brand-900/60">Coba kata kunci lain atau pilih kategori "Semua Rasa".</p>
+            </div>
+        </section>
+
+        <!-- ================= VIDEO SHOWCASE & USP SECTION ================= -->
+        <section id="keunggulan" class="py-16 sm:py-24 bg-brand-50/70 border-y border-brand-100">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    <!-- Video Freezer Column -->
+                    <div id="video-stok" class="lg:col-span-5 flex justify-center">
+                        <div class="relative w-full max-w-[300px] bg-white p-3 rounded-[2rem] shadow-soft border-2 border-brand-200">
+                            <div class="relative rounded-[1.5rem] overflow-hidden bg-brand-900 aspect-[9/16]">
+                                <video controls playsinline muted loop poster="assets/price-list.jpg" class="w-full h-full object-cover">
+                                    <source src="assets/stok-freezer.mp4" type="video/mp4">
+                                    Browser Anda tidak mendukung pemutar video.
+                                </video>
+                            </div>
+                            <div class="mt-3 text-center">
+                                <p class="font-display font-bold text-brand-800 text-sm">Yakin nggak mau? 🤭❄️</p>
+                                <p class="text-xs text-brand-900/60">Stok selalu fresh & dingin dalam kemasan foil</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Features Column -->
+                    <div class="lg:col-span-7">
+                        <span class="text-brand-500 font-bold text-xs uppercase tracking-widest">Kualitas Terjaga</span>
+                        <h2 class="font-display font-bold text-3xl sm:text-4xl text-brand-900 mt-1 mb-4">Kenapa Harus Coba Ren's Gabin Bar?</h2>
+                        <p class="text-brand-900/75 mb-8 leading-relaxed">
+                            Setiap potong Ren's Gabin Bar dibuat dengan sepenuh hati menggunakan bahan berkualitas, memastikan tekstur gabin tetap nikmat berpadu dengan cream dingin yang tidak bikin enek.
+                        </p>
+
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div class="bg-white p-5 rounded-2xl shadow-card border border-brand-100">
+                                <div class="w-11 h-11 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center text-xl mb-3">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                </div>
+                                <h3 class="font-display font-bold text-lg text-brand-900 mb-1">Cream Super Tebal</h3>
+                                <p class="text-sm text-brand-900/70">Isian cream lembut melimpah dengan potongan topping asli (choco chips, buah, regal, oreo).</p>
+                            </div>
+
+                            <div class="bg-white p-5 rounded-2xl shadow-card border border-brand-100">
+                                <div class="w-11 h-11 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-3">
+                                    <i class="fa-solid fa-box-open"></i>
+                                </div>
+                                <h3 class="font-display font-bold text-lg text-brand-900 mb-1">Kemasan Foil Higienis</h3>
+                                <p class="text-sm text-brand-900/70">Dibungkus rapi satu per satu dengan aluminium foil food-grade untuk menjaga suhu & kebersihan.</p>
+                            </div>
+
+                            <div class="bg-white p-5 rounded-2xl shadow-card border border-brand-100">
+                                <div class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl mb-3">
+                                    <i class="fa-solid fa-wallet"></i>
+                                </div>
+                                <h3 class="font-display font-bold text-lg text-brand-900 mb-1">Harga Ramah Kantong</h3>
+                                <p class="text-sm text-brand-900/70">Cemilan dessert rasa premium yang bisa dinikmati kapan saja mulai dari Rp 11.000 saja.</p>
+                            </div>
+
+                            <div class="bg-white p-5 rounded-2xl shadow-card border border-brand-100">
+                                <div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center text-xl mb-3">
+                                    <i class="fa-solid fa-motorcycle"></i>
+                                </div>
+                                <h3 class="font-display font-bold text-lg text-brand-900 mb-1">Pengiriman Cepat</h3>
+                                <p class="text-sm text-brand-900/70">Bisa ambil langsung di Rengas, Ciputat Timur atau kirim instan via Ojol ke area Tangsel & sekitarnya.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= LOCATION & SOCIALS SECTION ================= -->
+        <section id="lokasi" class="py-16 sm:py-24 max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+                <!-- Contact Card -->
+                <div class="lg:col-span-5 bg-white p-7 sm:p-8 rounded-3xl shadow-card border border-brand-100 flex flex-col justify-between">
+                    <div>
+                        <span class="text-brand-500 font-bold text-xs uppercase tracking-widest">Hubungi Kami</span>
+                        <h2 class="font-display font-bold text-3xl text-brand-900 mt-1 mb-6">Lokasi & Sosial Media</h2>
+
+                        <div class="space-y-5">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm text-brand-900">Alamat Toko / Pick-up</h3>
+                                    <p class="text-sm text-brand-900/75 leading-relaxed mt-0.5">
+                                        Jl. W R Supratman, Rengas, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15412
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-green-100 text-green-600 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm text-brand-900">WhatsApp Order</h3>
+                                    <a href="https://wa.me/6285772389971?text=Halo%20Ren's%20Gabin%20Bar,%20saya%20ingin%20tanya%20stok%20hari%20ini"
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="text-sm font-semibold text-brand-600 hover:underline mt-0.5 block">
+                                        0857-7238-9971
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Buttons -->
+                    <div class="mt-8 pt-6 border-t border-brand-100">
+                        <p class="text-xs font-bold uppercase tracking-wider text-brand-900/50 mb-3">Ikuti Update Promo & Stok</p>
+                        <div class="grid grid-cols-3 gap-3">
+                            <a href="https://www.instagram.com/lina_renna" target="_blank" rel="noopener noreferrer"
+                               class="flex flex-col items-center justify-center p-3 rounded-2xl bg-brand-50 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-pink-500 hover:to-purple-600 hover:text-white text-brand-800 transition-all group">
+                                <i class="fa-brands fa-instagram text-xl mb-1"></i>
+                                <span class="text-xs font-semibold">Instagram</span>
+                            </a>
+                            <a href="https://www.tiktok.com/@rens.gabin.bar" target="_blank" rel="noopener noreferrer"
+                               class="flex flex-col items-center justify-center p-3 rounded-2xl bg-brand-50 hover:bg-black hover:text-white text-brand-800 transition-all">
+                                <i class="fa-brands fa-tiktok text-xl mb-1"></i>
+                                <span class="text-xs font-semibold">TikTok</span>
+                            </a>
+                            <a href="https://www.threads.com/@lina_renna" target="_blank" rel="noopener noreferrer"
+                               class="flex flex-col items-center justify-center p-3 rounded-2xl bg-brand-50 hover:bg-neutral-900 hover:text-white text-brand-800 transition-all">
+                                <i class="fa-brands fa-threads text-xl mb-1"></i>
+                                <span class="text-xs font-semibold">Threads</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="lg:col-span-7 rounded-3xl overflow-hidden shadow-card border border-brand-100 min-h-[340px] bg-brand-50">
+                    <iframe 
+                        title="Peta Lokasi Ren's Gabin Bar Ciputat Timur"
+                        src="https://www.google.com/maps?q=Jl.%20W%20R%20Supratman,%20Rengas,%20Kec.%20Ciputat%20Tim.,%20Kota%20Tangerang%20Selatan,%20Banten%2015412&output=embed"
+                        class="w-full h-full min-h-[340px] border-0"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-brand-900 text-brand-100 py-10 pb-24 sm:pb-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div>
+                <p class="font-display font-bold text-xl text-white">Ren's Gabin Bar 🩷</p>
+                <p class="text-xs text-brand-200/80 mt-1">Homemade Chilled Gabin Dessert • Ciputat Timur, Tangerang Selatan</p>
+            </div>
+            <p class="text-xs text-brand-200/70">
+                &copy; <span id="current-year"></span> Ren's Gabin Bar. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ================= MOBILE STICKY CART BAR ================= -->
+    <div id="mobile-cart-bar" class="fixed bottom-4 inset-x-4 z-30 sm:hidden hidden">
+        <button onclick="toggleCart(true)" class="w-full bg-brand-600 text-white px-5 py-3.5 rounded-2xl shadow-xl flex items-center justify-between font-semibold active:scale-[0.98] transition-transform">
+            <div class="flex items-center gap-3">
+                <span id="mobile-cart-count" class="bg-white text-brand-600 font-bold text-xs w-6 h-6 rounded-full flex items-center justify-center">0</span>
+                <span class="text-sm">Lihat Keranjang</span>
+            </div>
+            <span id="mobile-cart-total" class="font-display font-bold text-base">Rp 0</span>
+        </button>
+    </div>
+
+    <!-- ================= SLIDE-OVER CART & CHECKOUT DRAWER ================= -->
+    <div id="cart-overlay" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+        <!-- Backdrop -->
+        <div onclick="toggleCart(false)" class="absolute inset-0 bg-brand-900/50 backdrop-blur-sm transition-opacity"></div>
+
+        <!-- Drawer Panel -->
+        <div class="absolute right-0 top-0 bottom-0 w-full max-w-md bg-white shadow-2xl flex flex-col">
+            <!-- Header -->
+            <div class="p-5 border-b border-brand-100 flex items-center justify-between bg-brand-50/50">
+                <div>
+                    <h2 id="cart-title" class="font-display font-bold text-xl text-brand-900">Keranjang Pesanan</h2>
+                    <p class="text-xs text-brand-900/60">Cek kembali varian pilihanmu sebelum order</p>
+                </div>
+                <button onclick="toggleCart(false)" aria-label="Tutup keranjang" class="w-9 h-9 rounded-full bg-white hover:bg-brand-100 text-brand-800 flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Scrollable Content -->
+            <div class="flex-1 overflow-y-auto p-5 space-y-6">
+                <!-- Cart Items Container -->
+                <div id="cart-items-list" class="space-y-3">
+                    <!-- Injected via JS -->
+                </div>
+
+                <!-- Checkout Form (Hidden when cart empty) -->
+                <form id="checkout-form" class="hidden space-y-4 pt-4 border-t border-brand-100" onsubmit="handleWhatsAppCheckout(event)">
+                    <h3 class="font-display font-bold text-base text-brand-900 flex items-center gap-2">
+                        <i class="fa-solid fa-clipboard-list text-brand-500"></i> Data Pemesan
+                    </h3>
+
+                    <div>
+                        <label for="cust-name" class="block text-xs font-semibold text-brand-800 mb-1">Nama Lengkap *</label>
+                        <input type="text" id="cust-name" required maxlength="60" placeholder="Contoh: Kak Rina"
+                               class="w-full px-3.5 py-2.5 text-sm border border-brand-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-400">
+                    </div>
+
+                    <div>
+                        <label for="delivery-method" class="block text-xs font-semibold text-brand-800 mb-1">Metode Pengambilan *</label>
+                        <select id="delivery-method" onchange="toggleAddressField()"
+                                class="w-full px-3.5 py-2.5 text-sm border border-brand-200 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-brand-400">
+                            <option value="Kirim via Ojol / Kurir Instan">Kirim via Ojol / Kurir Instan</option>
+                            <option value="Ambil Sendiri (Pick-up di Rengas)">Ambil Sendiri (Pick-up di Rengas, Ciputat Tim.)</option>
+                        </select>
+                    </div>
+
+                    <div id="address-wrapper">
+                        <label for="cust-address" class="block text-xs font-semibold text-brand-800 mb-1">Alamat Pengiriman *</label>
+                        <textarea id="cust-address" rows="2" required maxlength="200" placeholder="Tulis alamat lengkap + patokan..."
+                                  class="w-full px-3.5 py-2.5 text-sm border border-brand-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-400"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="cust-notes" class="block text-xs font-semibold text-brand-800 mb-1">Catatan Tambahan (Opsional)</label>
+                        <input type="text" id="cust-notes" maxlength="120" placeholder="Misal: kirim jam 3 sore / tanpa sendok"
+                               class="w-full px-3.5 py-2.5 text-sm border border-brand-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-400">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Footer Summary -->
+            <div id="cart-footer" class="hidden p-5 border-t border-brand-100 bg-brand-50/40 space-y-3">
+                <div class="flex items-center justify-between text-sm">
+                    <span class="text-brand-900/70">Total Harga (Belum Ongkir)</span>
+                    <span id="cart-subtotal" class="font-display font-bold text-xl text-brand-600">Rp 0</span>
+                </div>
+                <button type="submit" form="checkout-form"
+                        class="w-full bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold py-3.5 px-5 rounded-xl shadow-md flex items-center justify-center gap-2 transition-all active:scale-[0.98]">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    Pesan Sekarang via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= TOAST NOTIFICATION ================= -->
+    <div id="toast" class="fixed top-20 right-4 z-50 translate-x-[150%] transition-transform duration-300 bg-brand-900 text-white px-4 py-3 rounded-xl shadow-xl flex items-center gap-2.5 text-sm font-medium">
+        <i class="fa-solid fa-circle-check text-green-400"></i>
+        <span id="toast-message">Ditambahkan ke keranjang</span>
+    </div>
+
+    <!-- ================= JAVASCRIPT APPLICATION ENGINE ================= -->
+    <script>
+        'use strict';
+
+        // 1. KONFIGURASI TOKO & KATALOG PRODUK
+        // Anda dapat dengan mudah mengubah harga atau status stok di sini
+        const STORE_CONFIG = {
+            waNumber: '6285772389971',
+            storeName: "Ren's Gabin Bar",
+            maxQtyPerItem: 50
+        };
+
+        const PRODUCTS = [
+            {
+                id: 'rich-chocolate',
+                name: 'Rich Chocolate',
+                price: 11000,
+                category: ['creamy', 'bestseller'],
+                badge: 'Best Seller',
+                badgeColor: 'bg-amber-800 text-white',
+                desc: 'Cream cokelat pekat nan lembut bertabur choco chips melimpah.',
+                image: 'assets/rich-chocolate.jpg',
+                fallbackBg: '6F4E37'
+            },
+            {
+                id: 'vanilla-strawberry',
+                name: 'Vanilla Strawberry',
+                price: 11000,
+                category: ['fruity', 'bestseller'],
+                badge: 'Favorit',
+                badgeColor: 'bg-brand-500 text-white',
+                desc: 'Perpaduan cream vanilla manis dengan selai & potongan stroberi segar.',
+                image: 'assets/vanilla-strawberry.jpg',
+                fallbackBg: 'F43F7A'
+            },
+            {
+                id: 'cheese-regal',
+                name: 'Cheese Regal',
+                price: 13000,
+                category: ['creamy', 'bestseller'],
+                badge: 'Premium',
+                badgeColor: 'bg-amber-500 text-white',
+                desc: 'Cream keju gurih-manis berpadu remahan biskuit Marie Regal renyah.',
+                image: 'assets/cheese-regal.jpg',
+                fallbackBg: 'D97706'
+            },
+            {
+                id: 'cookies-cream',
+                name: 'Cookies and Cream',
+                price: 11000,
+                category: ['creamy', 'bestseller'],
+                badge: 'Best Seller',
+                badgeColor: 'bg-neutral-800 text-white',
+                desc: 'Cream vanilla susu lembut dipenuhi potongan biskuit cokelat hitam.',
+                image: 'assets/cookies-cream.jpg',
+                fallbackBg: '374151'
+            },
+            {
+                id: 'matcha',
+                name: 'Matcha',
+                price: 11000,
+                category: ['creamy'],
+                badge: 'Authentic',
+                badgeColor: 'bg-emerald-600 text-white',
+                desc: 'Aroma teh hijau Jepang yang wangi, creamy, dengan manis yang pas.',
+                image: 'assets/matcha.jpg',
+                fallbackBg: '65A30D'
+            },
+            {
+                id: 'taro',
+                name: 'Taro',
+                price: 11000,
+                category: ['creamy'],
+                badge: 'Sweet',
+                badgeColor: 'bg-purple-500 text-white',
+                desc: 'Cream talas ungu lembut dengan wangi khas yang menenangkan.',
+                image: 'assets/taro.jpg',
+                fallbackBg: '9333EA'
+            },
+            {
+                id: 'duren',
+                name: 'Duren (Durian)',
+                price: 13000,
+                category: ['fruity'],
+                badge: 'New Special',
+                badgeColor: 'bg-yellow-500 text-brand-900',
+                desc: 'Cream durian legit dengan aroma kuat dan rasa asli raja buah.',
+                image: 'assets/duren.jpg',
+                fallbackBg: 'EAB308'
+            },
+            {
+                id: 'vanilla-mango',
+                name: 'Vanilla Mango',
+                price: 12000,
+                category: ['fruity'],
+                badge: 'New Fresh',
+                badgeColor: 'bg-orange-500 text-white',
+                desc: 'Cream vanilla segar dengan swirl saus & potongan mangga manis.',
+                image: 'assets/vanilla-mango.jpg',
+                fallbackBg: 'F97316'
+            }
+        ];
+
+        // 2. STATE MANAGEMENT (Dengan Penyimpanan Aman LocalStorage)
+        let cart = loadCartFromStorage();
+        let activeCategory = 'all';
+        let searchQuery = '';
+        let toastTimeout = null;
+
+        // 3. SECURITY UTILITIES (XSS Prevention & Input Sanitization)
+        function sanitizeText(str) {
+            if (typeof str !== 'string') return '';
+            return str
+                .replace(/[<>]/g, '') // Hilangkan tag HTML berbahaya
+                .trim();
+        }
+
+        function formatRupiah(amount) {
+            return new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                minimumFractionDigits: 0
+            }).format(amount);
+        }
+
+        function loadCartFromStorage() {
+            try {
+                const saved = localStorage.getItem('rens_gabin_cart_v1');
+                if (!saved) return {};
+                const parsed = JSON.parse(saved);
+                // Validasi integritas data cart agar hanya ID produk valid & qty angka wajar
+                const validCart = {};
+                const validIds = new Set(PRODUCTS.map(p => p.id));
+                for (const [id, qty] of Object.entries(parsed)) {
+                    const numQty = parseInt(qty, 10);
+                    if (validIds.has(id) && Number.isInteger(numQty) && numQty > 0 && numQty <= STORE_CONFIG.maxQtyPerItem) {
+                        validCart[id] = numQty;
+                    }
+                }
+                return validCart;
+            } catch (e) {
+                return {};
+            }
+        }
+
+        function saveCartToStorage() {
+            try {
+                localStorage.setItem('rens_gabin_cart_v1', JSON.stringify(cart));
+            } catch (e) {
+                // Abaikan jika browser dalam mode private strict
+            }
+        }
+
+        // 4. RENDER CATALOG
+        function renderProducts() {
+            const grid = document.getElementById('product-grid');
+            const emptyState = document.getElementById('empty-state');
+            grid.innerHTML = '';
+
+            const filtered = PRODUCTS.filter(product => {
+                const matchesCategory = activeCategory === 'all' || product.category.includes(activeCategory);
+                const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                                      product.desc.toLowerCase().includes(searchQuery.toLowerCase());
+                return matchesCategory && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                emptyState.classList.remove('hidden');
+                return;
+            }
+            emptyState.classList.add('hidden');
+
+            filtered.forEach(product => {
+                const qty = cart[product.id] || 0;
+                const card = document.createElement('article');
+                card.className = 'bg-white rounded-3xl p-3.5 shadow-card border border-brand-100 hover:shadow-soft hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group';
+
+                const fallbackUrl = `https://placehold.co/500x500/${product.fallbackBg}/FFFFFF?text=${encodeURIComponent(product.name)}`;
+
+                card.innerHTML = `
+                    <div>
+                        <div class="relative overflow-hidden rounded-2xl aspect-square bg-brand-50 mb-3.5">
+                            <img src="${product.image}" alt="Ren's Gabin Bar rasa ${product.name}" loading="lazy"
+                                 onerror="this.onerror=null; this.src='${fallbackUrl}';"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full text-[11px] font-bold shadow-sm ${product.badgeColor}">
+                                ${product.badge}
+                            </span>
+                        </div>
+                        <div class="px-1">
+                            <h3 class="font-display font-bold text-lg text-brand-900 leading-snug">${product.name}</h3>
+                            <p class="text-xs text-brand-900/65 mt-1 line-clamp-2 min-h-[32px]">${product.desc}</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-brand-50 flex items-center justify-between px-1">
+                        <div>
+                            <span class="block text-[10px] text-brand-900/50 font-medium">Harga / pcs</span>
+                            <span class="font-display font-bold text-lg text-brand-600">${formatRupiah(product.price)}</span>
+                        </div>
+                        ${qty === 0 ? `
+                            <button onclick="updateCart('${product.id}', 1)" aria-label="Tambah ${product.name}"
+                                    class="bg-brand-100 hover:bg-brand-500 text-brand-700 hover:text-white font-bold text-xs px-4 py-2.5 rounded-xl transition-colors flex items-center gap-1.5 active:scale-95">
+                                <i class="fa-solid fa-plus"></i> Tambah
+                            </button>
+                        ` : `
+                            <div class="flex items-center gap-2 bg-brand-50 border border-brand-200 rounded-xl p-1">
+                                <button onclick="updateCart('${product.id}', -1)" aria-label="Kurangi ${product.name}"
+                                        class="w-7 h-7 rounded-lg bg-white hover:bg-brand-500 hover:text-white text-brand-700 flex items-center justify-center text-xs shadow-sm transition-colors">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <span class="font-bold text-sm text-brand-900 min-w-[20px] text-center">${qty}</span>
+                                <button onclick="updateCart('${product.id}', 1)" aria-label="Tambah ${product.name}"
+                                        class="w-7 h-7 rounded-lg bg-brand-500 hover:bg-brand-600 text-white flex items-center justify-center text-xs shadow-sm transition-colors">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        `}
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // 5. CART LOGIC
+        function updateCart(productId, delta) {
+            const product = PRODUCTS.find(p => p.id === productId);
+            if (!product) return;
+
+            const currentQty = cart[productId] || 0;
+            const nextQty = currentQty + delta;
+
+            if (nextQty <= 0) {
+                delete cart[productId];
+            } else if (nextQty > STORE_CONFIG.maxQtyPerItem) {
+                showToast(`Maksimal ${STORE_CONFIG.maxQtyPerItem} pcs per varian`);
+                return;
+            } else {
+                cart[productId] = nextQty;
+                if (delta > 0 && currentQty === 0) {
+                    showToast(`${product.name} masuk keranjang!`);
+                }
+            }
+
+            saveCartToStorage();
+            renderProducts();
+            renderCartUI();
+        }
+
+        function removeCartItem(productId) {
+            delete cart[productId];
+            saveCartToStorage();
+            renderProducts();
+            renderCartUI();
+        }
+
+        function calculateTotals() {
+            let totalItems = 0;
+            let totalPrice = 0;
+            for (const [id, qty] of Object.entries(cart)) {
+                const product = PRODUCTS.find(p => p.id === id);
+                if (product) {
+                    totalItems += qty;
+                    totalPrice += product.price * qty;
+                }
+            }
+            return { totalItems, totalPrice };
+        }
+
+        function renderCartUI() {
+            const { totalItems, totalPrice } = calculateTotals();
+
+            // Update badges
+            document.getElementById('nav-cart-count').textContent = totalItems;
+            document.getElementById('mobile-cart-count').textContent = totalItems;
+            document.getElementById('mobile-cart-total').textContent = formatRupiah(totalPrice);
+            document.getElementById('cart-subtotal').textContent = formatRupiah(totalPrice);
+
+            const mobileBar = document.getElementById('mobile-cart-bar');
+            if (totalItems > 0) {
+                mobileBar.classList.remove('hidden');
+            } else {
+                mobileBar.classList.add('hidden');
+            }
+
+            // Render Drawer Items
+            const listEl = document.getElementById('cart-items-list');
+            const formEl = document.getElementById('checkout-form');
+            const footerEl = document.getElementById('cart-footer');
+            listEl.innerHTML = '';
+
+            if (totalItems === 0) {
+                listEl.innerHTML = `
+                    <div class="text-center py-12">
+                        <div class="w-16 h-16 rounded-full bg-brand-50 text-brand-300 flex items-center justify-center text-2xl mx-auto mb-3">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </div>
+                        <p class="font-display font-bold text-brand-900">Keranjang masih kosong</p>
+                        <p class="text-xs text-brand-900/60 mt-1">Yuk pilih varian gabin favoritmu dulu!</p>
+                        <button type="button" onclick="goToMenu()" class="mt-4 bg-brand-500 hover:bg-brand-600 text-white text-xs font-bold px-5 py-2.5 rounded-full transition-colors">
+                            Lihat Menu
+                        </button>
+                    </div>
+                `;
+                formEl.classList.add('hidden');
+                footerEl.classList.add('hidden');
+                return;
+            }
+
+            formEl.classList.remove('hidden');
+            footerEl.classList.remove('hidden');
+
+            for (const [id, qty] of Object.entries(cart)) {
+                const product = PRODUCTS.find(p => p.id === id);
+                if (!product) continue;
+
+                const fallbackUrl = `https://placehold.co/100x100/${product.fallbackBg}/FFFFFF?text=Gabin`;
+                const row = document.createElement('div');
+                row.className = 'flex items-center gap-3 p-3 bg-brand-50/40 rounded-2xl border border-brand-100';
+                row.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}" onerror="this.onerror=null; this.src='${fallbackUrl}';"
+                         class="w-14 h-14 rounded-xl object-cover shrink-0">
+                    <div class="flex-1 min-w-0">
+                        <h4 class="font-display font-bold text-sm text-brand-900 truncate">${product.name}</h4>
+                        <p class="text-xs font-semibold text-brand-600">${formatRupiah(product.price * qty)}</p>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <button onclick="updateCart('${product.id}', -1)" class="w-7 h-7 rounded-lg bg-white border border-brand-200 text-brand-700 text-xs flex items-center justify-center hover:bg-brand-100">
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <span class="text-xs font-bold w-5 text-center">${qty}</span>
+                        <button onclick="updateCart('${product.id}', 1)" class="w-7 h-7 rounded-lg bg-brand-500 text-white text-xs flex items-center justify-center hover:bg-brand-600">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <button onclick="removeCartItem('${product.id}')" aria-label="Hapus item" class="ml-1 text-brand-300 hover:text-red-500 text-sm px-1">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </button>
+                    </div>
+                `;
+                listEl.appendChild(row);
+            }
+        }
+
+        // 6. CHECKOUT KE WHATSAPP
+        function toggleAddressField() {
+            const method = document.getElementById('delivery-method').value;
+            const wrapper = document.getElementById('address-wrapper');
+            const input = document.getElementById('cust-address');
+            if (method.includes('Ambil Sendiri')) {
+                wrapper.classList.add('hidden');
+                input.required = false;
+            } else {
+                wrapper.classList.remove('hidden');
+                input.required = true;
+            }
+        }
+
+        function handleWhatsAppCheckout(event) {
+            event.preventDefault();
+            const { totalItems, totalPrice } = calculateTotals();
+            if (totalItems === 0) return;
+
+            const name = sanitizeText(document.getElementById('cust-name').value);
+            const method = sanitizeText(document.getElementById('delivery-method').value);
+            const address = sanitizeText(document.getElementById('cust-address').value);
+            const notes = sanitizeText(document.getElementById('cust-notes').value);
+            const isPickup = method.includes('Ambil Sendiri');
+
+            if (!name) {
+                alert('Mohon isi Nama Lengkap terlebih dahulu.');
+                return;
+            }
+
+            let orderLines = '';
+            let index = 1;
+            for (const [id, qty] of Object.entries(cart)) {
+                const p = PRODUCTS.find(item => item.id === id);
+                if (p) {
+                    orderLines += `${index}. ${p.name} (${qty} pcs) = ${formatRupiah(p.price * qty)}\n`;
+                    index++;
+                }
+            }
+
+            let message = `Halo *${STORE_CONFIG.storeName}*! 🩷\n`;
+            message += `Saya ingin memesan Gabin Bar dengan rincian berikut:\n\n`;
+            message += `*PESANAN:*\n${orderLines}\n`;
+            message += `*Total Item:* ${totalItems} pcs\n`;
+            message += `*Estimasi Total:* ${formatRupiah(totalPrice)}${isPickup ? '' : ' _(belum termasuk ongkir)_'}\n\n`;
+            message += `*DATA PEMESAN:*\n`;
+            message += `• Nama: ${name}\n`;
+            message += `• Metode: ${method}\n`;
+            if (!isPickup) {
+                message += `• Alamat: ${address}\n`;
+            }
+            if (notes) {
+                message += `• Catatan: ${notes}\n`;
+            }
+            message += `\nMohon info ketersediaan stok & total pembayarannya ya kak. Terima kasih! 🙏`;
+
+            const waUrl = `https://wa.me/${STORE_CONFIG.waNumber}?text=${encodeURIComponent(message)}`;
+            window.open(waUrl, '_blank', 'noopener,noreferrer');
+        }
+
+        // 7. UI HELPERS
+        function toggleMobileMenu(forceState) {
+            const nav = document.getElementById('mobile-nav');
+            const btn = document.getElementById('mobile-menu-btn');
+            const icon = document.getElementById('mobile-menu-icon');
+            const isCurrentlyHidden = nav.classList.contains('hidden');
+            const shouldOpen = typeof forceState === 'boolean' ? forceState : isCurrentlyHidden;
+
+            if (shouldOpen) {
+                nav.classList.remove('hidden');
+                btn.setAttribute('aria-expanded', 'true');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                nav.classList.add('hidden');
+                btn.setAttribute('aria-expanded', 'false');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+
+        function goToMenu() {
+            toggleCart(false);
+            const menuSection = document.getElementById('menu');
+            if (menuSection) {
+                menuSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function toggleCart(open) {
+            const overlay = document.getElementById('cart-overlay');
+            if (open) {
+                toggleMobileMenu(false);
+                overlay.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            } else {
+                overlay.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-message').textContent = msg;
+            toast.classList.remove('translate-x-[150%]');
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.add('translate-x-[150%]');
+            }, 2200);
+        }
+
+        // 8. INITIALIZATION & EVENT LISTENERS
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Category filter clicks
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-btn').forEach(b => {
+                        b.classList.remove('bg-brand-500', 'text-white', 'shadow-sm');
+                        b.classList.add('bg-white', 'text-brand-800', 'border', 'border-brand-200');
+                    });
+                    btn.classList.remove('bg-white', 'text-brand-800', 'border', 'border-brand-200');
+                    btn.classList.add('bg-brand-500', 'text-white', 'shadow-sm');
+                    activeCategory = btn.dataset.category;
+                    renderProducts();
+                });
+            });
+
+            // Search input listener
+            document.getElementById('search-input').addEventListener('input', (e) => {
+                searchQuery = sanitizeText(e.target.value);
+                renderProducts();
+            });
+
+            // Close cart & mobile menu on ESC key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    toggleCart(false);
+                    toggleMobileMenu(false);
+                }
+            });
+
+            renderProducts();
+            renderCartUI();
+        });
+    </script>
+</body>
+</html>

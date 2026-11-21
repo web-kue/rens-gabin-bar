@@ -1,0 +1,14 @@
+rens-gabin-bar/
+├── index.html                  <-- Kode lengkap di bawah ini
+└── assets/
+    ├── logo.png                <-- Logo hati pink Ren's Gabin Bar
+    ├── price-list.jpg          <-- Poster Price List
+    ├── rich-chocolate.jpg      <-- Foto varian Rich Chocolate
+    ├── vanilla-strawberry.jpg  <-- Foto varian Vanilla Strawberry
+    ├── matcha.jpg              <-- Foto varian Matcha
+    ├── cookies-cream.jpg       <-- Foto varian Cookies and Cream
+    ├── taro.jpg                <-- Foto varian Taro
+    ├── cheese-regal.jpg        <-- Foto varian Cheese Regal
+    ├── duren.jpg               <-- Foto varian Duren
+    ├── vanilla-mango.jpg       <-- Foto varian Vanilla Mango
+    └── stok-freezer.mp4        <-- Video freezer Anda
